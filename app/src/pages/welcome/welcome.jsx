@@ -11,7 +11,7 @@ class Welcome extends React.Component {
             <section className="hero is-info">
               <div className="hero-body">
                 <p className="title">
-                  Thank you for trying out the secure-electron-template!
+                  BestBuy Admin
                 </p>
                 <p className="subtitle">
                   Please navigate to view the features of this template.
