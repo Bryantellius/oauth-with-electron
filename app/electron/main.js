@@ -21,6 +21,8 @@ const ContextMenu = require("secure-electron-context-menu").default;
 const path = require("path");
 const fs = require("fs");
 const crypto = require("crypto");
+const { createAuthWindow } = require("../auth/auth-process");
+const authService = require("../auth/auth-service");
 const isDev = process.env.NODE_ENV === "development";
 const config = require("../config");
 const port = config.port; // From .env; needs to match webpack.development.js and package.json
@@ -208,10 +210,19 @@ protocol.registerSchemesAsPrivileged([
   },
 ]);
 
+async function showWindow() {
+  try {
+    await authService.refreshTokens();
+    return createWindow();
+  } catch (err) {
+    createAuthWindow();
+  }
+}
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on("ready", createWindow);
+app.on("ready", showWindow());
 
 // Quit when all windows are closed.
 app.on("window-all-closed", () => {
