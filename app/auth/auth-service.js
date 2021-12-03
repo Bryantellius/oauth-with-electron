@@ -88,7 +88,7 @@ async function loadTokens(callbackURL) {
   } catch (error) {
     await logout();
 
-    throw error;
+    console.error(error);
   }
 }
 

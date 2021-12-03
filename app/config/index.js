@@ -11,5 +11,5 @@ module.exports = {
   port: process.env.PORT,
   auth0Domain: process.env.AUTH0_DOMAIN,
   clientId: process.env.AUTH0_CLIENTID,
-  apiIdentifier: AUTH0_API_IDENTIFIER,
+  apiIdentifier: process.env.AUTH0_API_IDENTIFIER,
 };

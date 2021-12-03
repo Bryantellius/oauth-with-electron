@@ -1,6 +1,6 @@
 const { BrowserWindow } = require("electron");
 const authService = require("./auth-service");
-const createWindow = require("../electron/main");
+const createWindow = require("../electron/app-process");
 
 let win = null;
 
@@ -27,9 +27,13 @@ function createAuthWindow() {
   };
 
   webRequest.onBeforeRequest(filter, async ({ url }) => {
-    await authService.loadTokens(url);
-    createWindow();
-    return destroyAuthWin();
+    try {
+      await authService.loadTokens(url);
+      createWindow();
+      return destroyAuthWin();
+    } catch (error) {
+      console.error("\nauth-process > onBeforeRequest\n", error);
+    }
   });
 
   win.on("authenticated", () => {
