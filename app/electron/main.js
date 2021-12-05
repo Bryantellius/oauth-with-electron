@@ -1,7 +1,7 @@
-const { app } = require("electron");
+const { app, ipcMain } = require("electron");
 
 const { createAuthWindow } = require("../auth/auth-process");
-const createWindow = require("./app-process");
+const { createWindow, selfHost, win } = require("./app-process");
 const authService = require("../auth/auth-service");
 
 async function showWindow() {

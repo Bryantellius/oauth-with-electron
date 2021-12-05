@@ -208,4 +208,4 @@ protocol.registerSchemesAsPrivileged([
   },
 ]);
 
-module.exports = createWindow;
+module.exports = { createWindow, selfHost, win };
