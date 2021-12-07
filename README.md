@@ -1,4 +1,5 @@
 # secure-electron-template
+
 A current electron app template with the most popular frameworks, designed and built with security in mind. (If you are curious about what makes an electron app secure, please check out [this page](https://github.com/reZach/secure-electron-template/blob/master/docs/secureapps.md)).
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=reZach_secure-electron-template&metric=alert_status)](https://sonarcloud.io/dashboard?id=reZach_secure-electron-template)
@@ -8,7 +9,8 @@ A current electron app template with the most popular frameworks, designed and b
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=reZach_secure-electron-template&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=reZach_secure-electron-template)
 
 ## How to get started
-To get started, clone the repository by clicking the ![Use this template](https://github.com/reZach/secure-electron-template/blob/master/docs/imgs/usethistemplate.png "Use this template") button, or through the command line (`git clone https://github.com/reZach/secure-electron-template.git`). 
+
+To get started, clone the repository by clicking the ![Use this template](https://github.com/reZach/secure-electron-template/blob/master/docs/imgs/usethistemplate.png "Use this template") button, or through the command line (`git clone https://github.com/reZach/secure-electron-template.git`).
 
 Once cloned, install the dependencies for the repo by running the following commands (you do _not_ have to run the first command if your command line is already inside the newly cloned respository):
 
@@ -23,9 +25,11 @@ npm run dev
 When you'd like to test your app in production, or package it for distribution, please navigate to [this page](https://github.com/reZach/secure-electron-template/blob/master/docs/scripts.md) for more details on how to do this.
 
 ## Demo
+
 ![Demo](https://github.com/reZach/secure-electron-template/blob/master/docs/imgs/intro.gif "Demo")
 
 ## Features
+
 Taken from the [best-practices](https://electronjs.org/docs/tutorial/security) official page, here is what this repository offers!
 
 1. [Only load secure content](https://electronjs.org/docs/tutorial/security#1-only-load-secure-content) - ✅ (But the developer is responsible for loading secure assets only 🙂)
@@ -47,6 +51,7 @@ Taken from the [best-practices](https://electronjs.org/docs/tutorial/security) o
 17. [Use a current version of electron](https://electronjs.org/docs/tutorial/security#17-use-a-current-version-of-electron) - ✅
 
 ## Included frameworks
+
 Built-in to this template are a number of popular frameworks already wired up to get you on the road running.
 
 - [Electron](https://electronjs.org/)
@@ -58,6 +63,7 @@ Built-in to this template are a number of popular frameworks already wired up to
 - [Mocha](https://mochajs.org/)
 
 ## Bonus modules
+
 What would a template be without some helpful additions?
 
 - [i18next](https://www.i18next.com/) (with [this plugin](https://github.com/reZach/i18next-electron-fs-backend) for localization).
@@ -67,11 +73,14 @@ What would a template be without some helpful additions?
 - [License key validation](https://github.com/reZach/secure-electron-license-keys) (for validating a user has the proper license to use your app) **new!**
 
 ## Architecture
+
 For a more detailed view of the architecture of the template, please check out [here](https://github.com/reZach/secure-electron-template/blob/master/docs/architecture.md). I would _highly_ recommend reading this document to get yourself familiarized with this template.
 
 ## FAQ
+
 Please see [our faq](https://github.com/reZach/secure-electron-template/blob/master/docs/faq.md) for any common questions you might have.
 **NEW TO ELECTRON?** Please visit [this page](https://github.com/reZach/secure-electron-template/blob/master/docs/newtoelectron.md).
 
 ## Show us your apps!
+
 If you've built any applications with our template, we'd [love to see them!](https://github.com/reZach/secure-electron-template/blob/master/docs/yourapps.md).

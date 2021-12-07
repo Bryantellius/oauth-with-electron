@@ -1,8 +1,10 @@
 const { app, ipcMain } = require("electron");
-
+const i18nextBackend = require("i18next-electron-fs-backend");
 const { createAuthWindow } = require("../auth/auth-process");
 const { createWindow, selfHost, win } = require("./app-process");
 const authService = require("../auth/auth-service");
+const ContextMenu = require("secure-electron-context-menu").default;
+const SecureElectronLicenseKeys = require("secure-electron-license-keys");
 
 async function showWindow() {
   try {

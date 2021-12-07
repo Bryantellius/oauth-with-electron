@@ -22,7 +22,7 @@ function getProfile() {
 }
 
 function getAuthenticationURL() {
-  return `https://${config.auth0Domain}/authorize?scope=openid profile offline_access&response_type=code&client_id=${config.clientId}&redirect_uri=${redirectUri}`;
+  return `https://${config.auth0Domain}/authorize?audience=${config.apiIdentifier}&scope=openid profile offline_access&response_type=code&client_id=${config.clientId}&redirect_uri=${redirectUri}`;
 }
 
 async function refreshTokens() {
